@@ -37,7 +37,7 @@ function start () {
 
   const win = new BrowserWindow(browserWindowOptions)
 
-  if (previousWindowState.isMaximized) {
+  if (previousWindowState && previousWindowState.isMaximized) {
     win.maximize()
   }
 
